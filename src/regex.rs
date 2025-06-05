@@ -6,6 +6,8 @@ use regex::Regex;
 pub fn get_patterns() -> Vec<Regex> {
     let patterns: Vec<Regex> = vec![
         Regex::new(r"\[Video Playback\] ERROR:").unwrap(),
+        Regex::new(r"\[Behaviour\] OnPlayerJoined").unwrap(),
+        Regex::new(r"\[Behaviour\] OnPlayerLeft").unwrap()
     ];
     
     patterns
